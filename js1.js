@@ -1,51 +1,24 @@
-const dropdown = document.querySelector(".dropdown");
-const fixedSidebar = document.querySelector(".fixed-sidebar");
-const music = document.getElementById("music");
-const musicInfo = document.getElementById("music-info");
-let isPlaying = true;
-music.volume = 0.2;
+const aiImage = document.getElementById("aiImage");
+const faviconLink = document.querySelector("link[rel='shortcut icon']");
+    const interval = 5000;
+    let currentIndex = 0;
+const title = document.title;
+window.addEventListener('blur', () => {
+    document.title = '免费色情视频及性爱影片 – A片，X级，色情片分享网站 | Pornhub';
+    faviconLink.href = "download.png";
+})
+window.addEventListener('focus', () => {
+    document.title = title;
+    faviconLink.href = "none"; 
+});
+const playButton = document.getElementById("playButton");
+const audio = document.getElementById("myAudio");
 
-dropdown.addEventListener("mouseover", function () {
-    const dropdownContent = this.querySelector(".dropdown-content");
-    dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px";
+playButton.addEventListener("click", function() {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+    audio.currentTime = 0;
+  }
 });
-
-dropdown.addEventListener("mouseout", function () {
-    const dropdownContent = this.querySelector(".dropdown-content");
-    dropdownContent.style.maxHeight = "0";
-});
-
-fixedSidebar.addEventListener("click", function () {
-    if (isPlaying) {
-        music.pause();
-        isPlaying = false;
-        music.currentTime = 0;
-    } else {
-        music.play();
-        isPlaying = true;
-    }
-});
-music.addEventListener("ended", function() {
-    music.currentTime = 0;
-});
-function showMusicInfo() {
-    musicInfo.style.display = "block";
-    setTimeout(hideMusicInfo, 5000);
-}
-function hideMusicInfo() {
-    musicInfo.style.display = "none";
-}
-music.addEventListener("play", showMusicInfo);
-function handleHover() {
-    if (isPlaying) {
-        document.getElementById("music").play();
-    }
-}
-function showMusicInfo() {
-    musicInfo.style.display = "block";
-    setTimeout(hideMusicInfo, 5000);
-}
-function hideMusicInfo() {
-    musicInfo.style.display = "none";
-}
-music.addEventListener("play", showMusicInfo);

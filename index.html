@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:title" content="小瑞克的第一個網頁">
+    <meta property="og:title" content="期末互動式網頁">
     <meta property="og:image" content="https://cdn.discordapp.com/attachments/961510145815380000/1117506653105958984/image-01.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小瑞克網頁主頁</title>
+    <title>主頁</title>
+    <link rel="shortcut icon" href="empty/none.png">
     <link rel="stylesheet" href="css1.css">
+    <script src="js1.js"></script>
 </head>
-<body onmouseover="handleHover()">
+<body>
     <div>
         <div id="notification-container"></div>
         <div>
@@ -27,19 +29,19 @@
                     </li>
                 </ul>
             </nav>
+            
+                <div class="image-container">
+                        <img id="aiImage" src="https://media.discordapp.net/attachments/847318233522634772/1120059524116664421/Fj1oVwwUUAA79M-.jpg?width=1410&height=432" alt="ai" class="ai">
+
         </div>
         <div class="outer-container">
             <div class="myself-container">
-                <a href="https://vrchat.com/home/user/usr_6e1a389d-e839-4f69-87c7-2b35e9a2bdb1" target="_blank">
-                    <img src="https://cdn.discordapp.com/attachments/961510145815380000/1117506653105958984/image-01.png" alt="myself" class="myself">
-                </a>
+                    <img id="playButton" src="https://cdn.discordapp.com/attachments/847318233522634772/1120078469699731538/kurukuru.gif" alt="myself" class="myself"alt="Play Music">
+                    <audio id="myAudio" src="https://cdn.discordapp.com/attachments/847318233522634772/1120080817759207434/KuruKuruKururin.mp3"></audio>
             </div>
             <hr color="darkred">
-            <h1 id="aboutme">關於我</h1>
-            <p>我是劉天健 來自台灣 居住地:台北 年齡:20y。</p>
-            <p>喜歡寫程式 現在學習<a href="https://www.blender.org/" target="_blank">blender</a>和<a href="https://unity.com/" target="_blank">unity</a>。</p>
-            <p>目前在屏科大念書。</p>
-            <hr color="darkred">
+            
+           
             <h1>專長程式語言</h1>
             <div class="code-container">
                 <div>
@@ -53,40 +55,27 @@
                 </div>
             </div>
             <hr color="darkred">
-            <h1>聯繫我</h1>
+            <h1 id="aboutme">關於我</h1>
+            <p>19歲宅男，沒有任何特殊專長。</p>
+            <p>喜歡寫程式，但是一打開編譯軟體就立刻沒心力。</p>
+            <p>目前在大學處於退學邊緣。</p>
+            <p>好想耍廢到死</p>
+            <hr color="darkred">
+            <h1>找我嗎？</h1>
             <div id="callme" class="outsidelink-container">
+                
                 <div>
-                    <a href="mailto:ERIC20030512@gmail.com" target="_self">
-                        <img src="https://bucket-img.tnlmedia.com/cabinet/files/consoles/1/teams/1/2022/10/27vRUSykQnhapOEzcMu3zFFEe8GKDwc3uuhhDqW5.png?w=750&fit=max&auto=compress" alt="outsidelink" class="outsidelink">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://discordapp.com/users/404534959794159626" target="_blank">
+                    <a href="https://discordapp.com/users/478552624220733451" target="_blank">
                         <img src="https://theme.zdassets.com/theme_assets/678183/84b82d07b293907113d9d4dafd29bfa170bbf9b6.ico" alt="outsidelink" class="outsidelink">
                     </a>
                 </div>
                 <div>
-                    <a href="https://line.me/ti/p/yvnY8ChXiX" target="_blank">
-                        <img src="https://play-lh.googleusercontent.com/74iMObG1vsR3Kfm82RjERFhf99QFMNIY211oMvN636_gULghbRBMjpVFTjOK36oxCbs" alt="outsidelink" class="outsidelink">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://github.com/TWEric1" target="_blank">
+                    <a href="https://github.com/Nicameow" target="_blank">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" alt="outsidelink" class="outsidelink">
                     </a>
                 </div>
             </div>
         </div>
-        <audio id="music" src="https://cdn.discordapp.com/attachments/961510145815380000/1118097757878620200/-_STUDY_WITH_MIKU_ver._-.mp3" type="audio/mp3" autoplay></audio>
-    </div>
-    <div class="fixed-sidebar">
-        <p class="fixtext">音</p>
-        <p class="fixtext">樂</p>
-    </div>
-    <div class="music-info" id="music-info">
-        <img src="https://i1.sndcdn.com/artworks-HcqvbizeQjq7b8Qq-mhdiZQ-t500x500.jpg" alt="music image">
-        少女レイ - STUDY WITH MIKU ver.
-    </div>
-    <script src="js1.js"></script>
+
 </body>
 </html>
